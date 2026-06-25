@@ -8,4 +8,11 @@ Stage 3
  ------> The suggestion given by another developer in creating indexes is a efficient advice 
 
  QUERY
+ 
   SELECT * FROM  notifications WHERE notification_type(SELECT * FROM notifications ORDER BY Placements DESC LIMIT 7);
+
+Stage 4
+ If the database is getting overwhelmed then I would suggest to perform normalization which removes duplicate data so that number of data present gets reduced and doesnt get overwhelmed 
+
+
+ 
